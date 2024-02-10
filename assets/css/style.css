@@ -1,0 +1,435 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(assets/font/bpg_nino_mtavruli_bold.ttf);
+  }
+*{
+    font-family: myFirstFont;
+    box-sizing: border-box;
+}
+  body{
+    overflow-x: hidden; 
+    margin: 0px;
+
+}
+a{
+    text-decoration: none;
+    color: white;
+    
+}
+nav{
+    width: 100%;
+}
+.navbar{
+    background-color: #313f50;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 5px white;
+   
+
+}
+.menue{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+
+}
+.logo{
+    display: flex;
+    justify-content:center;
+    width: 20%;
+    font-size: 30px;
+  
+}
+.menueitems{
+    position: relative;
+}
+.animation{
+    position: absolute;
+    display: none;
+    border: 1px solid #66fcf1;
+}
+.menueitems:hover .animation{
+    display: block;
+    animation-name: anim;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.headerImg{
+    background-image: url('../foto/header.jpg');
+    background-size: 100% 100vh;
+    background-repeat: no-repeat;
+    width:100%;
+    height:100vh;
+}
+.registrationBox{
+    width:100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+.form{
+    border:2px solid white;
+    padding:30px 50px;
+    border-radius: 15px;
+}
+input{
+    margin-bottom:10px;
+    padding:10px;
+    outline:none;
+    color:white;
+    background-color: transparent;
+    border-radius: 3px;
+    border:1px solid white;
+}
+::placeholder{
+    color:white;
+}
+
+button{
+    padding:10px;
+    background-color:#51beb6;
+    border:none;
+    border-radius:5px;
+    display: block;
+    margin:0px auto;
+}
+
+
+
+.form h2{
+    text-align: center;
+    color: white;
+
+}
+
+
+button:hover{
+   background-color:  #66fcf1;
+   transition: 1s;
+}
+
+.aboutus{
+    width: 100%;
+    
+}
+.about{
+    width: 90%;
+    margin: auto;
+    background-color: #c5c6c7;
+}
+.abouth2 h2{
+ text-align: center;
+ margin-top: 0px;
+ padding-top: 50px;
+}
+.aboutinfo{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.abouinfol{
+    width: 40%;
+}
+.abouinfol p{
+    margin-top: 0px;
+}
+.abouinfor{
+    width: 40%;
+    box-sizing: border-box;
+}
+.abouinfor img{
+    width: 100%;
+}
+.news{
+    width: 100%;
+    height: 70vh;
+    
+}
+p{
+    margin-top: 0px;
+}
+.card{
+    width: 90%;
+    margin: auto;
+    background-color: #c5c6c7;
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+    justify-content: space-evenly;
+    height: 70vh;
+}
+.cardl{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 50%;
+}
+.cardr{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 45%;
+}
+.boxs, .boxs2 {
+    width: 47%;
+}
+
+.boxs:nth-child(odd) {
+    background-color: #938b8b; 
+}
+
+.boxs:nth-child(even) {
+    background-color: #fff;
+}
+
+.boxs:nth-child(odd) {
+    background-color: rgb(89, 107, 105);
+}
+
+.boxs2:nth-child(even) {
+    background-color: rgb(97, 91, 91); 
+}
+
+
+  
+.media{
+    width: 100%;
+    height: 160vh;
+   
+}
+.mainmedia{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    background-color: #c5c6c7;
+    display: flex;
+    flex-direction: row;
+    padding-top: 100px;
+}
+.mediah2 h2{
+    text-align: center;
+}
+.medial{
+    width: 50%;
+    
+    
+}
+.video{
+    width: 90%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+}
+video, iframe, audio{
+    width: 100%;
+}
+.mediar{
+    width: 50%;
+    
+}
+.table{
+    width: 90%;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.uli{
+    display:flex ;
+     
+   justify-content: center;
+}
+footer{
+    width: 100%;
+    height: 25vh;
+}
+.final{
+    width: 100%;
+    height: 25vh;
+    background-color: #1f2833;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+}
+.final p{
+    padding-top: 0px;
+    text-align: center;
+    padding-top: 50px;
+    padding-right: 40%;
+}
+.final a{
+    color: #66fcf1;
+    text-decoration: underline;
+    padding-right: 50px;
+    
+}
+@media screen and (max-width:768px){
+
+    .aboutinfo{
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+    }
+    .abouinfol, .abouinfor {
+        width: 70%;
+    }
+    .card {
+        align-items: center;
+        flex-direction: column;
+        height: 85vh;
+        padding-bottom: 50px;
+        
+    }
+    .cardl,  .cardr{
+        
+        width: 90%;
+        /* height: 150px; */
+    }
+
+    .mainmedia {
+        padding-top: 50px;
+        flex-direction: column;
+        align-items: center;
+        height: 250vh;
+    }
+    .medial {
+        width: 70%;
+    }
+    footer{
+        padding-top: 80vh;
+    }
+
+}
+@media screen and (max-width:500px){
+    .logo {
+        width: 15%;
+    }
+    .menue {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .navbar{
+
+        padding: 10px;
+        
+   
+     justify-content: space-around;
+    }
+    .menueitems a{
+        font-size: 15px;
+    }
+    .medial {
+        width: 90%;
+    }
+    .video{
+        justify-content: space-evenly
+    }
+    .mediar {
+        width: 90%;
+    }
+    .mediah2 h2 {
+        width: 90%;
+    }
+
+    .final p {
+        padding-top: 0px;
+        text-align: center;
+        padding-top: 50px;
+        padding-right: 20%;
+    }
+}
+@media screen and (max-width:320px){
+    .navbar{
+        flex-direction: column;
+    }
+    .menue{
+        flex-direction: column;
+        align-items: center;
+
+    }
+    .mainmedia{
+        padding-top: 100px;
+    }
+    .news{
+        height: 100vh;
+    }
+    .boxs, .boxs2 {
+        width: 100%;
+    }
+    
+    .card{
+        height: 100vh;
+        padding-bottom: 50px;
+       justify-content: space-between;
+    }
+    .cardr, .cardl{
+        flex-direction: column;
+    }
+    .boxs2 {
+        background: rgb(105, 97, 97);
+        margin-left: 0px;
+    }
+    
+
+.video {
+    width: 100%;
+    height: 100vh;
+    justify-content: space-around;
+    padding-left: 0px;
+}
+.mediah2 h2 {
+    width: 100%;
+}
+.final p{
+    padding-right: 10%;
+}
+
+.cardl, .cardr {
+flex-direction: column;
+ width: 90%;
+ height: 300px;
+align-items: center;
+}
+.media {
+    width: 100%;
+    height: 172vh;
+}
+.mainmedia {
+    height: 255vh;
+}
+.form {
+    border: 2px solid white;
+    padding: 20px 30px;
+    border-radius: 15px;
+}
+    
+
+}
+
+
+@keyframes anim{
+    from{
+        width: 0px;
+    }to{
+        width: 100%;
+    }
+    
+}
